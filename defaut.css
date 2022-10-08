@@ -1,0 +1,510 @@
+@import url(assets/fonts/nunito_sans_font.css);
+@import url(https://fonts.bunny.net/css?family=acme:400);
+
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* On normalise la taille d'écriture sur l'élément html (root) à 10px. Donc 1rem = 10px */
+  font-size: 62.5%;
+  -webkit-text-size-adjust: none; /*─ Debug font size on iphone when landscape orientation ─*/
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  -ms-text-size-adjust: 100%;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  cursor: default;
+  scroll-behavior: smooth;
+  tab-size: 4;
+  height: 100%;
+}
+
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  /* On remet la taille de la police d'écriture à 16px, vu que 1rem = 10px, 1.6rem = 16px. Donc par rapport au body 1em = 16px */
+  font-size: 1.6rem;
+  overflow-x: hidden;
+  text-rendering: optimizeSpeed;
+  position: relative;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  color: #131418;
+  background-color: #efefef;
+  /* gap: 15px;  */
+  display: flex;
+  flex-direction: column;
+  margin: 0;  
+  font-family: 'Nunito Sans';
+}
+
+img,
+video,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+}
+
+/* Preventing Text Overflow */
+h1, h2, h3, h4, h5, p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+h1{
+  font-size: 2em;
+  font-family: 'Nunito Sans';
+  display: flex;
+  flex-direction: row;    
+  align-items: center;
+  margin-bottom: 1rem;
+  justify-content: center; 
+  color: #7895B2;
+}
+
+h1::before, h1::after {
+  content: "";
+  flex:0 1 16rem;
+  border-bottom: 0.2rem solid #7895B2;
+}
+
+.sous_h1{
+  color: #7895B2;
+  margin-bottom: 3.2rem;
+  text-align: center;
+
+}
+
+h2 {
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  font-family: 'acme';
+}
+
+svg {
+  display: inline-block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+img{
+    width: 25px
+}
+
+li {
+    list-style-type: none;
+}
+
+/* HEADER */
+
+header{
+    background-color: black;
+    color: white;
+    padding: 0 0.8rem;
+    height: 4rem;  
+    align-items: center;
+    font-weight: bold;
+}
+header a {
+    color: white;
+}
+
+/* Nav */
+
+nav{    
+    position:sticky;   
+    top: 10px;
+    padding:1rem;
+    background-color: #F5EFE6;
+    
+}
+nav p {
+  font-weight: 900;
+  font-size: 1.1em;
+}
+nav span {
+  color: red;
+}
+
+footer{
+    background: rgb(44, 8, 77);
+    color: white;
+    padding: 2em;
+  }
+
+/* class communue */
+.container{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.flexbox_row{
+    display: flex;    
+    justify-content: space-between;
+}
+
+.flexbox_column {
+    display: flex;    
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.liste_horizontal{
+    display: flex;
+    gap: 15px;    
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+/* 1er Block */
+
+#first_block {
+  background-color: #F5EFE6;
+}
+
+#presentation {
+    background: no-repeat center url(assets/images/home-page-header.png);
+    background-color: #F5EFE6;
+    height:50rem;
+    justify-content: space-around;    
+}
+
+#presentation p:nth-of-type(1){
+  font-size: 1.5em;
+  flex-basis: 30% ;
+}
+
+#presentation p:nth-of-type(2){
+  flex-basis: 30% ; 
+}
+
+#crea{
+  align-items: flex-end;
+}
+#presentation a{
+ color: red;
+ font-weight: bold;
+}
+#pres_coin_inf_droite {
+  text-align: center;
+  flex-basis: 35% ;
+  align-items: center;
+  font-weight: bold;  
+}
+
+/* 2em block */
+
+#aide{  
+  gap: 2em;
+  justify-content:left;
+}
+
+#aide main:first-child{
+  flex-basis: 40%;  
+}
+
+#aide main:last-child{
+  flex-basis: 60%; 
+}
+
+.bouton{  
+  background-color: #011150;
+  padding: 1em;
+  margin: 1rem;
+  border-radius: 1.5rem;
+  font-weight: bold;
+  color: white;
+  justify-content: flex-start;
+  font-size: 1.3em;
+  gap: 1em;
+}
+
+#aide div:nth-of-type(1){
+  color: red;
+}
+#aide div:nth-of-type(2){
+  color: yellow;
+}
+#aide div:nth-of-type(3){
+  color: rgb(72, 72, 235);
+}
+
+#aide p {
+  font-size: 1em;
+}
+
+
+/* 3em Block */
+
+
+#block3  {
+  align-items: center;
+  gap: 2em;
+}
+
+#block3 img{
+  flex-basis: 40%;
+}
+
+#block3 div {
+  flex-basis: 60%;  
+}
+
+/* 4em block */
+
+#mes_competences{
+  text-align: center;
+}
+
+#mes_competences h3{
+  text-align: left;
+  margin-bottom: 1em;
+  font-family: "acme";
+}
+
+#mes_competences div:first-child {  
+  flex-basis: 50%; 
+}
+
+#competence {
+  width: 70%;
+  margin: 0 auto;  
+}
+
+#competence img {
+  align-items: flex-start;
+}
+
+#competence li {
+  justify-content:left;
+  gap:1em;  
+  margin-bottom: 0.85em;
+
+}
+
+#competence p {
+  text-align: left;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+#competence h4 {
+  text-align: left; 
+  color: red;
+  
+}
+
+#mes_competences div:last-child { 
+  flex-basis: 50%;
+}
+
+#comp_icon img{
+  width: 4em;  
+}
+
+#comp_dev {
+  gap:3em;
+  row-gap: 1em;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+
+#comp_graph img {
+  width: 2em;
+  justify-content: space-around;
+}
+
+
+/* 5eme block */
+
+#formations{
+  gap: 1em;
+  justify-content: space-between;
+}
+
+#formations div:nth-of-type(1){
+  flex-basis: 33% ;
+}
+#formations div:nth-of-type(2){
+  flex-basis: 33% ;
+}
+#formations div:nth-of-type(3){
+  flex-basis: 33% ;
+}
+
+
+.formation {
+  text-align: center;
+  align-items: center;
+  gap: 0.5em;
+  border: 0.1rem solid rgba(175, 175, 175, 0.781);
+  border-radius: 0.3rem;
+  padding-top: 1em;
+  margin-top: 2em;
+}
+
+.formation p:nth-of-type(2){
+  color: grey;
+  border-bottom: 0.2rem solid black ;
+  width: 60%;
+  padding-bottom: 0.5em;
+}
+
+.formation span{
+  background-color: #c9d3db;
+  width: 100%;
+  flex-basis: 3.5em;
+  border: 0.1rem solid rgba(175, 175, 175, 0.781);
+  height: 100%;
+  display: flex;
+  
+}
+
+.formation p:nth-of-type(3){
+  color: #011150;
+  font-weight: bold;
+  font-size: 1.3em;  
+}
+
+.formation p:nth-of-type(4){ 
+  font-weight: bold;
+  font-size: 1em;
+  font-family: "acme";
+}
+
+.bouton_certif {  
+  background:#011150;
+  border-radius: 3em;
+  padding:0.5em 1em;
+  color: rgb(165, 165, 241);
+  font-size: 0.8em;   
+  display: inline-block;
+  margin: auto;
+}
+
+#link_CV a{
+  color: red;
+  justify-content: center;
+  margin-top: 2em;
+  font-weight: 900;
+  gap: 1em;
+}
+
+footer main {
+  align-items:center ;
+  gap: 1em;
+}
+
+footer main p:nth-of-type(1){
+  font-weight: 900;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+footer main p:nth-of-type(1) span{
+  color: yellowgreen;
+}
+
+footer main p:nth-of-type(2){
+  font-style: italic;
+  font-weight: 600;
+  text-align: center;
+}
+footer main a {
+  color: red;
+}
+footer main a:first-child {
+  color: blueviolet;
+}
+
+#realisations {
+   
+}
+
+.projet {  
+  padding: 1rem;  
+  gap: 3em;
+}
+
+.projet img {  
+  flex-basis: 60%;  
+}
+.projet div {
+  flex-basis: 40%;
+}
+
+.des_rea {
+  align-items: left;
+  justify-content: center;
+}
+
+.des_rea p:nth-of-type(2) {
+  font-style: italic;
+  margin-bottom: 1.5em;
+}
+.des_rea p:nth-of-type(3) {
+  color: #AEBDCA;
+  font-size: 1.5em ;
+  margin-bottom: 1.5em;
+}
+
+.des_rea a {  
+  background-color: #030c30;  
+  padding: 1em;
+  width: auto;
+  color: #F5EFE6 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gap96{
+  gap: 9.6rem;
+}
+
+
