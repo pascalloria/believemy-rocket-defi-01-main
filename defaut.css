@@ -40,8 +40,7 @@ body {
   width: 100%;
   -webkit-overflow-scrolling: touch;
   color: #131418;
-  background-color: #efefef;
-  /* gap: 15px;  */
+  background-color: #efefef;  
   display: flex;
   flex-direction: column;
   margin: 0;  
@@ -102,6 +101,8 @@ svg {
   max-width: 100%;
   width: 100%;
   height: auto;
+  vertical-align: middle;
+  stroke: 1rem;
 }
 
 
@@ -114,9 +115,7 @@ a:hover {
   text-decoration: underline;
 }
 
-img{
-    width: 25px
-}
+
 
 li {
     list-style-type: none;
@@ -164,6 +163,10 @@ nav span {
   color: red;
 }
 
+section {
+  margin-bottom: 12rem;
+}
+
 footer{
   background: rgb(44, 8, 77);
   color: white;
@@ -189,7 +192,7 @@ footer{
 
 .liste_horizontal{
   display: flex;
-  gap: 15px;    
+  gap: 1,5rem;    
 }
 
 .wrap{
@@ -200,6 +203,7 @@ footer{
 
 #first_block {
   background-color: #F5EFE6;
+  margin-bottom: 9.6rem;
 }
 
 #presentation {
@@ -230,6 +234,9 @@ footer{
   flex-basis: 35% ;
   align-items: center;
   font-weight: bold;  
+}
+#pres_coin_inf_droite img {
+  width: 2.5rem;
 }
 
 /* 2em block */
@@ -273,6 +280,11 @@ footer{
   font-size: 1em;
 }
 
+#aide svg{
+  width: 2.5rem;
+  fill: currentColor;
+}
+
 
 /* 3em Block */
 
@@ -282,13 +294,16 @@ footer{
   gap: 2em;
 }
 
-#block3 img{
-  flex-basis: 40%;
-}
-
-#block3 div {
+#block3 div:first-of-type {
   flex-basis: 60%;  
 }
+
+#block3 div:nth-of-type(2){
+  flex-basis: 40%;  
+
+}
+
+
 
 /* 4em block */
 
@@ -303,7 +318,7 @@ footer{
 }
 
 #mes_competences div:first-child {  
-  flex-basis: 50%; 
+  flex-basis: 40%; 
 }
 
 #competence {
@@ -311,8 +326,10 @@ footer{
   margin: 0 auto;  
 }
 
-#competence img {
-  align-items: flex-start;
+#competence img {  
+  width: 1.5rem;
+  margin-bottom: auto;
+  margin-top: 0.33rem;
 }
 
 #competence li {
@@ -331,15 +348,17 @@ footer{
 #competence h4 {
   text-align: left; 
   color: red;
+  margin-bottom: auto;
+  margin-top: 0;
   
 }
 
 #mes_competences div:last-child { 
-  flex-basis: 50%;
+  flex-basis: 60%;
 }
 
 #comp_icon img{
-  width: 4em;  
+  width: 4em;    
 }
 
 #comp_dev {
@@ -347,6 +366,11 @@ footer{
   row-gap: 1em;
   justify-content: space-around;
   margin-bottom: 2em;
+}
+
+#comp_dev li:nth-of-type(7) img,#comp_dev li:nth-of-type(6) img ,#comp_dev li:nth-of-type(13) img{
+  width: 7em;
+  margin-top: 2rem;
 }
 
 #comp_graph img {
@@ -381,6 +405,10 @@ footer{
   border-radius: 0.3rem;
   padding-top: 1em;
   margin-top: 2em;
+}
+
+.formation img {
+  width: 2em;
 }
 
 .formation p:nth-of-type(2){
@@ -428,7 +456,57 @@ footer{
   margin-top: 2em;
   font-weight: 900;
   gap: 1em;
+  font-size: 1.4em;
 }
+
+#link_CV img{
+  width: 1em; 
+}
+
+
+/* 6eme block */
+.projet {  
+  padding: 1rem;  
+  gap: 3em;
+}
+
+.projet img {
+  width: 100%;
+}
+
+.des_rea {
+  flex-basis:40%;
+  
+}
+
+.img_rea {  
+  flex-basis:60%;  
+  
+}
+
+
+.des_rea {
+  align-items: left;
+  justify-content: center;
+}
+
+.des_rea p:nth-of-type(2) {
+  font-style: italic;
+  margin-bottom: 1.5em;
+}
+.des_rea p:nth-of-type(3) {
+  color: #AEBDCA;
+  font-size: 1.5em ;
+  margin-bottom: 1.5em;
+}
+
+.des_rea a {  
+  background-color: #030c30;  
+  padding: 1em;
+  width: auto;
+  color: #F5EFE6 ;
+}
+
 
 footer main {
   align-items:center ;
@@ -456,46 +534,6 @@ footer main a {
 footer main a:first-child {
   color: blueviolet;
 }
-
-#realisations {
-   
-}
-
-.projet {  
-  padding: 1rem;  
-  gap: 3em;
-}
-
-.projet img {  
-  flex-basis: 60%;  
-}
-.projet div {
-  flex-basis: 40%;
-}
-
-.des_rea {
-  align-items: left;
-  justify-content: center;
-}
-
-.des_rea p:nth-of-type(2) {
-  font-style: italic;
-  margin-bottom: 1.5em;
-}
-.des_rea p:nth-of-type(3) {
-  color: #AEBDCA;
-  font-size: 1.5em ;
-  margin-bottom: 1.5em;
-}
-
-.des_rea a {  
-  background-color: #030c30;  
-  padding: 1em;
-  width: auto;
-  color: #F5EFE6 ;
-}
-
-
 
 
 
