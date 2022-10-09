@@ -89,7 +89,6 @@ h1::before, h1::after {
   color: #7895B2;
   margin-bottom: 3.2rem;
   text-align: center;
-
 }
 
 h2 {
@@ -126,25 +125,27 @@ li {
 /* HEADER */
 
 header{
-    background-color: black;
-    color: white;
-    padding: 0 0.8rem;
-    height: 4rem;  
-    align-items: center;
-    font-weight: bold;
+  background-color: black;
+  color: white;
+  padding: 0 0.8rem;
+  height: 4rem;  
+  align-items: center;
+  font-weight: bold;
+}
+header svg {
+  color: red;
 }
 header a {
-    color: white;
+  color: white;
 }
 
 /* Nav */
 
 nav{    
-    position:sticky;   
-    top: 10px;
-    padding:1rem;
-    background-color: #F5EFE6;
-    
+  position:sticky;   
+  top: 0rem;
+  padding:1rem;
+  background-color: #F5EFE6;    
 }
 nav p {
   font-weight: 900;
@@ -155,35 +156,35 @@ nav span {
 }
 
 footer{
-    background: rgb(44, 8, 77);
-    color: white;
-    padding: 2em;
+  background: rgb(44, 8, 77);
+  color: white;
+  padding: 2em;
   }
 
 /* class communue */
 .container{
-    margin: 0 auto;
-    width: 70%;
+  margin: 0 auto;
+  width: 70%;
 }
 
 .flexbox_row{
-    display: flex;    
-    justify-content: space-between;
+  display: flex;    
+  justify-content: space-between;
 }
 
 .flexbox_column {
-    display: flex;    
-    flex-direction: column;
-    justify-content: space-between;
-  }
+  display: flex;    
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .liste_horizontal{
-    display: flex;
-    gap: 15px;    
+  display: flex;
+  gap: 15px;    
 }
 
 .wrap{
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 /* 1er Block */
@@ -193,10 +194,10 @@ footer{
 }
 
 #presentation {
-    background: no-repeat center url(assets/images/home-page-header.png);
-    background-color: #F5EFE6;
-    height:50rem;
-    justify-content: space-around;    
+  background: no-repeat center url(assets/images/home-page-header.png);
+  background-color: #F5EFE6;
+  height:50rem;
+  justify-content: space-around;    
 }
 
 #presentation p:nth-of-type(1){
