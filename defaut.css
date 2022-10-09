@@ -76,12 +76,15 @@ h1{
   margin-bottom: 1rem;
   justify-content: center; 
   color: #7895B2;
+  
 }
 
 h1::before, h1::after {
   content: "";
   flex:0 1 16rem;
   border-bottom: 0.2rem solid #7895B2;
+  margin: 0 0.5em;
+
 }
 
 .sous_h1{
@@ -123,18 +126,20 @@ li {
 
 /* HEADER */
 
-header{
+header {
   background-color: black;
   color: white;
   padding: 0 0.8rem;
   height: 4rem;  
   align-items: center;
-  font-weight: bold;
+  font-weight: bold;  
+  font-size: 1.1em;
 }
 header svg {
   fill: red;
-  width: 1em;  
+  width: 1.3em;
 }
+  
 
 header a {
   color: white;
@@ -153,7 +158,7 @@ nav{
   position:sticky;   
   top: 0rem;
   padding:1rem;
-  background-color: #F5EFE6;    
+  background-color: #d8d6d3;    
 }
 nav p {
   font-weight: 900;
@@ -202,15 +207,16 @@ footer{
 /* 1er Block */
 
 #first_block {
-  background-color: #F5EFE6;
   margin-bottom: 9.6rem;
+  background: no-repeat bottom url(assets/images/home-page-header.png);
+  background-color: #d8d6d3;
+  height:50rem;
+  
 }
 
-#presentation {
-  background: no-repeat center url(assets/images/home-page-header.png);
-  background-color: #F5EFE6;
+#presentation { 
+  justify-content: space-around; 
   height:50rem;
-  justify-content: space-around;    
 }
 
 #presentation p:nth-of-type(1){
@@ -228,6 +234,7 @@ footer{
 #presentation a{
  color: red;
  font-weight: bold;
+ font-size: 1.1em;
 }
 #pres_coin_inf_droite {
   text-align: center;
@@ -256,9 +263,9 @@ footer{
 
 .bouton{  
   background-color: #011150;
-  padding: 1em;
+  padding: 0.8em;
   margin: 1rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   font-weight: bold;
   color: white;
   justify-content: flex-start;
@@ -349,8 +356,7 @@ footer{
   text-align: left; 
   color: red;
   margin-bottom: auto;
-  margin-top: 0;
-  
+  margin-top: 0;  
 }
 
 #mes_competences div:last-child { 
@@ -368,14 +374,25 @@ footer{
   margin-bottom: 2em;
 }
 
-#comp_dev li:nth-of-type(7) img,#comp_dev li:nth-of-type(6) img ,#comp_dev li:nth-of-type(13) img{
+#comp_dev li:nth-of-type(7) img {
   width: 7em;
   margin-top: 2rem;
 }
+#comp_dev li:nth-of-type(6) img {
+  width: 8em;
+  margin-top: 2rem
+}
+#comp_dev li:nth-of-type(13) img {
+  width: 11em;
+  margin-top: 2rem
+}
+
+#comp_graph {
+  justify-content: space-around;
+}
 
 #comp_graph img {
-  width: 2em;
-  justify-content: space-around;
+  width: 2em;  
 }
 
 
