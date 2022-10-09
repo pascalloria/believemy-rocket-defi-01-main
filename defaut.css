@@ -243,13 +243,13 @@ footer{
   font-weight: bold;  
 }
 #pres_coin_inf_droite img {
-  width: 2.5rem;
+  width: 6rem;
 }
 
 /* 2em block */
 
 #aide{  
-  gap: 2em;
+  gap: 1em;
   justify-content:left;
 }
 
