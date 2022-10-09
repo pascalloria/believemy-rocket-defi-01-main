@@ -110,7 +110,7 @@ svg {
 
 
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
@@ -121,7 +121,7 @@ a:hover {
 
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* HEADER */
@@ -138,18 +138,20 @@ header {
 header svg {
   fill: red;
   width: 1.3em;
-}
-  
+  margin-left: 1em;
+  margin-right: 1em;
+} 
 
 header a {
   color: white;
-  margin-left: 1em;
-  margin-right: 1em;
+  
 }
 
 ul svg:first-child{
   fill: white;
-  width: 1.5em;   
+  width: 1.5em;  
+  margin-left: 0;
+  margin-right: 0; 
 }
 
 /* Nav */
