@@ -133,10 +133,19 @@ header{
   font-weight: bold;
 }
 header svg {
-  color: red;
+  fill: red;
+  width: 1em;  
 }
+
 header a {
   color: white;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+ul svg:first-child{
+  fill: white;
+  width: 1.5em;   
 }
 
 /* Nav */
