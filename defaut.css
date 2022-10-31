@@ -190,6 +190,11 @@ footer{
   display: flex;    
   justify-content: space-between;
 }
+#tel svg {
+  fill: blue;
+}
+
+
 
 .flexbox_column {
   display: flex;    
